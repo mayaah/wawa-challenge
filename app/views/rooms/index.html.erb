@@ -1,0 +1,17 @@
+<div style="display: flex">
+  <div style="flex: 50%">
+    <h5> <%= current_user.username %> </h5>
+    <h4> Rooms </h4>
+    <%= render 'layouts/new_room_form' %>
+    <%= turbo_stream_from "rooms" %>
+    <div id="rooms">
+      <%= render @rooms %>
+    </div>
+  </div>
+
+  <div style="flex: 50%">
+    <% if @single_room %>
+      <h4> <%= @single_room.name %> </h4>
+    <% end %>
+  </div>
+</div>
