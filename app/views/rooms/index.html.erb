@@ -2,7 +2,8 @@
   <h5> <%= current_user.username %> </h5>
   <h4> Rooms </h4>
   <%= turbo_stream_from "rooms" %>
-  <div>
+  <div id="rooms">
     <%= render @rooms %>
   </div>
+  <%= render 'layouts/new_room_form' %>
 </div>
