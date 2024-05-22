@@ -12,6 +12,11 @@
   <div style="flex: 50%">
     <% if @single_room %>
       <h4> <%= @single_room.name %> </h4>
+      <%= turbo_stream_from @single_room %>
+      <div id="messages">
+        <%= render @messages %>
+      </div>
+      <%= render 'layouts/new_message_form' %>
     <% end %>
   </div>
 </div>

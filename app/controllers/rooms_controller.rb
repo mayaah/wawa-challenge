@@ -4,12 +4,17 @@ class RoomsController < ApplicationController
   def index
     @room = Room.new
     @rooms = Room.all
+
+    render 'index'
   end
 
   def show
     @room = Room.new
     @rooms = Room.all
     @single_room = Room.find(params[:id])
+
+    @message = Message.new
+    @messages = @single_room.messages.order(created_at: :asc)
 
     render 'index'
   end
