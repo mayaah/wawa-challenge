@@ -1,6 +1,8 @@
-<div class="container-<%= message.user.id %>">
+<div class="container-<%= message.user.id %> border-b py-5">
   <div class="message-<%= message.user.id %>">
-    <h6> <%= message.user.username %> </h6>
+    <div class="font-bold pb-3">
+      <%= message.user.username %>
+    </div>
     <%= message.body %>
   </div>
 </div>

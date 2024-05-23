@@ -1,10 +1,24 @@
-<h1>Simple Chatroom</h1>
+<div class="container text-center">
+  <div class="text-3xl font-bold text-indigo-800 m-8">
+    Simple Chatroom
+  </div>
 
-<% if current_user %>
-  <p> Logged in as <%= current_user.username %></p>
-  <%= link_to "Go to Rooms", rooms_path %>
-  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
- <% else %>
-  <%= link_to "Login", new_user_session_path %>
-  <%= link_to "Sign up", new_user_registration_path %>
-<% end %>
+  <% if current_user %>
+    <p> Hello, <%= current_user.username %></p>
+    <div class="py-6">
+      <button class="py-2 px-4 bg-indigo-800 text-white mx-4">
+        <%= link_to "Go to Rooms", rooms_path %>
+      </button>
+      <button class="py-2 px-4 bg-indigo-800 text-white mx-4">
+        <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
+      </button>
+    </div>
+  <% else %>
+    <button class="py-2 px-4 bg-indigo-800 text-white mx-4">
+      <%= link_to "Login", new_user_session_path %>
+    </button>
+    <button class="py-2 px-4 bg-indigo-800 text-white mx-4">
+      <%= link_to "Sign up", new_user_registration_path %>
+    </button>
+  <% end %>
+</div>
