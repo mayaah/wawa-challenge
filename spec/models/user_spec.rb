@@ -38,6 +38,7 @@ RSpec.describe User, type: :model do
         password: 'password'
       )
     }
+
     it {expect(subject).to be_invalid}
   end
 end
