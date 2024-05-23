@@ -31,7 +31,7 @@ RSpec.describe 'Rooms', type: :system do
             visit rooms_path
             fill_in 'room_name', with: room.name
             click_on 'Create Room'
-            expect(page).to have_content(room.name).once
+            expect(page).to have_content(room.name, count: 1)
           end
         end
       end
