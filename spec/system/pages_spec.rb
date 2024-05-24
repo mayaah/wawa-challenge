@@ -20,7 +20,7 @@ RSpec.describe 'Home', type: :system do
         login_as(user)
         visit root_path
         expect(page).to have_content('Simple Chatroom')
-        expect(page).to have_content('Hello')
+        expect(page).to have_content('Logged in as')
         expect(page).to have_link('Go to Rooms')
         expect(page).to have_link('Logout')
       end
