@@ -11,6 +11,12 @@ I used Devise for user authentication to not reinvent the wheel. Devise is used 
 Tried to add some basic styling admittedly some things were hacky and duplicative but given the time I would want to make more reusable styles and make a better, more responsive layout.
 
 
+https://github.com/mayaah/wawa-challenge/assets/5885054/29eb76a1-46db-49b5-9311-87d5d42a92fc
+
+
+
+
+
 ### Stack
 |  |  |
 |--|--|
