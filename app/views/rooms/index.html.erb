@@ -13,11 +13,11 @@
 
   <div class="fixed overflow-auto top-0 right-0 w-2/3 h-screen p-3">
     <% if @single_room %>
-      <div class="fixed bg-white text-3xl font-bold text-indigo-800 my-5">
+      <div class="fixed top-0 bg-white text-3xl font-bold text-indigo-800 py-5 w-full">
         <%= @single_room.name %>
       </div>
       <%= turbo_stream_from @single_room %>
-      <div id="messages" data-controller="scroll" class="mb-24">
+      <div id="messages" data-controller="scroll" class="mb-24 mt-24">
         <%= render @messages %>
       </div>
       <div class="container fixed bottom-0 py-10 bg-white">

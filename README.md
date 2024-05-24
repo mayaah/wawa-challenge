@@ -8,6 +8,8 @@ I've addressed most requirements except that "Users should be able to join and l
 
 I used Devise for user authentication to not reinvent the wheel. Devise is used widely and has a lot of documentation. I used RSpec for testing because it's what I'm most familiar with and what is most widely used in industry. I did not have prior experience with Capybara before though so the system tests there may not quite be the best way to test things.
 
+Tried to add some basic styling admittedly some things were hacky and duplicative but given the time I would want to make more reusable styles and make a better, more responsive layout.
+
 
 ### Stack
 |  |  |
