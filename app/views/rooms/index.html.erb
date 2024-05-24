@@ -17,7 +17,7 @@
         <%= @single_room.name %>
       </div>
       <%= turbo_stream_from @single_room %>
-      <div id="messages">
+      <div id="messages" data-controller="scroll" class="mb-24">
         <%= render @messages %>
       </div>
       <div class="container fixed bottom-0 py-10 bg-white">
